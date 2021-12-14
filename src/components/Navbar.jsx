@@ -1,20 +1,21 @@
 import React from 'react';
 import Logo from '../assets/images/logo.svg';
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <div className='flex w-11/12 mx-auto items-center justify-between'>
       <div className='flex items-center'>
-        <div className="pr-5">
+        <Link className="pr-5" to="/">
           <img
             src={Logo}
             className='animate-spin-slow w-20'
             alt='Logo'
           />
-        </div>
+        </Link>
         <div className="flex space-x-5">
           <div>Home</div>
-          <div>About me</div>
+          <Link to="#about">About me</Link>
           <div>Portfolio</div>
         </div>
       </div>
