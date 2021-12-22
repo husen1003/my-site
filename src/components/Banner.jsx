@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 
 const Banner = () => {
@@ -26,7 +26,7 @@ const Banner = () => {
     <>
       <div style={{marginTop: 71}} className='bg-banner md:bg-white bg-cover bg-right-top h-screen flex justify-center items-center text-3xl md:text-6xl text-white text-center text-opacity-70'>
         <span>
-          <span className='block sm:inline-block'>Hi there 👋, I am&nbsp;</span>
+          <span className='block sm:inline-block'>Hi there <span className="animate-wave">👋</span>, I am&nbsp;</span>
           <span ref={el} />
         </span>
       </div>
